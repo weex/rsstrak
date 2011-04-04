@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/env perl
 
 #  rsstrak.pl v0.2 <http://trygnulinux.com> 
 #  Copyright (c) 2009 David Sterry <david@trygnulinux.com>
