@@ -54,7 +54,7 @@ my ($tyear,$tmonth,$tday) = Today();
 
 while ( <> ) {
   # regex to parse the apache2 log
-  /^(\S+) - - \[(\S+ \-\d{4})\] "(\S+ \S+ [^"]+)" (\d{3}) (\d+|-) "(.*?)" "([^"]+)"$/;
+  /^(\S+) - - \[(\S+ [\+\-]{1}\d{4})\] "(\S+ \S+ [^"]+)" (\d{3}) (\d+|-) "(.*?)" "([^"]+)"$/;
   my ($host,$date,$url_with_method,$status,$size,$referrer,$agent) = ($1,$2,$3,$4,$5,$6,$7);
 
   $date =~ /(\d{2})\/(\w{3})\/(\d{4})/;
